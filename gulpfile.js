@@ -3,15 +3,16 @@ const postcss = require('gulp-postcss'),
   autoprefixer = require('autoprefixer'),
   lost = require('lost'),
   htmllint = require('gulp-htmllint'),
+  colors = require('./src/css/vars'),
   gutil = require('gulp-util');
 
 
 const options = {
   cssSource: './src/css/style.css',
-  cssDestination: './dest/'
+  cssDestination: './dest/css'
 };
 
-gulp.watch('./src/css/modules/*.css', function () {
+gulp.watch(['./src/css/modules/*.css', './src/css/style.css'], function () {
   gulp.start(['css']);
 });
 
@@ -49,8 +50,8 @@ gulp.task('css', function () {
     })
   ];
   return gulp.src(options.cssSource)
-    .pipe(postcss(proccessors))
     .pipe(postcss([require('postcss-easy-import')]))
-    .pipe(postcss([require('postcss-simple-vars')({silent: true})]))
+    .pipe(postcss([require('postcss-simple-vars')({ variables: colors , silent: false })]))
+    .pipe(postcss(proccessors))
     .pipe(gulp.dest(options.cssDestination))
 });

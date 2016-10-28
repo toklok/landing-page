@@ -2,9 +2,8 @@
 @import 'modules/nav.css';
 @import 'modules/header.css';
 
-/******************************/
-/********* MAIN ***************/
-
 body {
+    height: 100%;
+    lost-center: 1300px;
     background-color: white;
 }

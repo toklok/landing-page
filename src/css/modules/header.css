@@ -1,17 +1,19 @@
+$headerHeight: 100%;
+$headerTop: 10px;
+
 header {
-    /* change to proper clear */
-    overflow: hidden;
-    background: green;
+    lost-column: 1;
+    lost-utility: clearfix;
+    height: $headerHeight;
+    position: relative;
+    top: $headerTop;
 }
 
 .hd-logo_text {
-    width: 50%;
-    float: left;
+    lost-column: 1/2;
     text-align: center;
-    position: absolute;
-    top: 2rem;
 }
 
 .hd-logo_h1 {
-    font-size: 2rem;
+    font-size: 3em;
 }

@@ -1,19 +1,25 @@
 /*******NAVIGATION **********/
 /* change name to classes */
 /* perhaps don't use floats */
+$navHeight: 150px;
+$navHeight: 100%;
+$navBorderColor: black;
+
+nav {
+    lost-column: 1/2;
+    height: $navHeight;
+}
 
 nav ul {
-    width: 50%;
-    float: right;
-    background: red;
+    display: flex;
+    height: $navHeight;
+    justify-content: space-between;
 }
 
 nav li {
     display: inline-block;
-    background: grey;
+    border: 2px solid $navBorderColor;
     padding: 1em;
-    border-bottom: none;
-    height: 50px;
     line-height: 50px;
     font-size: 1.4em;
 }
