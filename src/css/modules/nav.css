@@ -1,0 +1,19 @@
+/*******NAVIGATION **********/
+/* change name to classes */
+/* perhaps don't use floats */
+
+nav ul {
+    width: 50%;
+    float: right;
+    background: red;
+}
+
+nav li {
+    display: inline-block;
+    background: grey;
+    padding: 1em;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+}

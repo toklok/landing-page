@@ -1,0 +1,10 @@
+@import 'reset.css';
+@import 'modules/nav.css';
+@import 'modules/header.css';
+
+/******************************/
+/********* MAIN ***************/
+
+body {
+    background-color: white;
+}
