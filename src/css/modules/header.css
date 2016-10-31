@@ -1,5 +1,6 @@
-$headerHeight: 100%;
+$headerHeight: 7rem;
 $headerTop: 10px;
+$headerLogo: 5em;
 
 header {
     lost-column: 1;
@@ -10,10 +11,12 @@ header {
 }
 
 .hd-logo_text {
+    position: absolute;
     lost-column: 1/2;
+    top: calc($headerHeight / 6.5);
     text-align: center;
 }
 
 .hd-logo_h1 {
-    font-size: 3em;
+    font-size: $headerLogo;
 }

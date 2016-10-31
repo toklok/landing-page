@@ -5,9 +5,24 @@ $navHeight: 150px;
 $navHeight: 100%;
 $navBorderColor: black;
 
+/* navigation link colors */
+/* revisit to change colors */
+$navA: black;
+$navB: red;
+
 nav {
     lost-column: 1/2;
     height: $navHeight;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: $navA;
+}
+
+nav a:visited {
+    color: $navB;
 }
 
 nav ul {
@@ -19,7 +34,7 @@ nav ul {
 nav li {
     display: inline-block;
     border: 2px solid $navBorderColor;
-    padding: 1em;
+    padding: 1rem;
     line-height: 50px;
     font-size: 1.4em;
 }

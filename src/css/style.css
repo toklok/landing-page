@@ -1,9 +1,5 @@
 @import 'reset.css';
 @import 'modules/nav.css';
 @import 'modules/header.css';
-
-body {
-    height: 100%;
-    lost-center: 1300px;
-    background-color: white;
-}
+@import 'modules/body.css';
+@import 'modules/main.css';
