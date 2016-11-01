@@ -5,11 +5,15 @@ $navHeight: 150px;
 $navHeight: 100%;
 $navBorderColor: black;
 $navFont: 'Rubik', sans-serif;
+$navFont-desk: 1.4em;
+$navFont-mob: 2.4em;
 
 /* navigation link colors */
 /* revisit to change colors */
 $navA-Main: black;
 $navA-Visited: black;
+$navA-hover-color: white;
+$navA-hover-background: #c6c6c6;
 
 nav {
     lost-column: 1/2;
@@ -22,6 +26,10 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     color: $navA-Main;
+}
+
+nav a:hover {
+    background: $navA-hover-background;
 }
 
 nav a:visited {
@@ -37,6 +45,7 @@ nav ul {
 nav li {
     font-family: $navFont;
     display: inline-block;
+    text-transform: uppercase;
     line-height: 50px;
     font-size: 1.4em;
 }
@@ -45,5 +54,9 @@ nav li {
     nav {
         lost-column: 1;
         height: 70%;
+    }
+
+    nav li {
+        font-size: 2.4em;
     }
 }

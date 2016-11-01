@@ -1,6 +1,6 @@
 $headerHeight: 7rem;
 $headerTop: 10px;
-$headerLogo: 4em;
+$headerLogo: 3em;
 $headerFont: 'Rubik', sans-serif;
 
 /*media queries */
@@ -18,11 +18,12 @@ header {
 .hd-logo_text {
     position: absolute;
     lost-column: 1/2;
-    top: calc($headerHeight / 6.5);
+    top: calc($headerHeight / 3.5);
     text-align: center;
 }
 
 .hd-logo_h1 {
+    text-transform: uppercase;
     font-size: $headerLogo;
     font-family: $headerFont;
 }
