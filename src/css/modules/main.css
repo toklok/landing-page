@@ -1,9 +1,70 @@
 $contentTop: 8rem;
+$mainFont: 'Rubik', sans-serif;
 
-main {
+.front-seen {
     position: relative;
     top: 1rem;
     background: black;
     height: 100%;
     display: block;
+}
+
+.main-intro {
+    height: 548px;
+    background-image: url(../images/front-pool.jpg);
+    background-repeat: round;
+}
+
+.right-overlay {
+    font-size: 3rem;
+    width: 42%;
+    float: right;
+    position: relative;
+    top: -37px;
+    font-family: 'Rubik', sans-serif;
+    margin-right: 14px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.left-overlay_h1 {
+    font-size: .85em;
+    text-transform: uppercase;
+}
+
+.right-overlay li {
+    color: white;
+}
+
+.left-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 55%;
+    font-size: 4rem;
+    font-family: $mainFont;
+    color: white;
+    top: calc(548px / 3);
+    position: relative;
+    left: 20px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.right-overlay_h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin: 1rem;
+}
+
+.right-overlay ul {
+    margin: 1.5rem;
+}
+
+.information {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.information a {
+    color: white;
 }
