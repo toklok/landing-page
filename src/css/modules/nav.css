@@ -4,11 +4,12 @@
 $navHeight: 150px;
 $navHeight: 100%;
 $navBorderColor: black;
+$navFont: 'Rubik', sans-serif;
 
 /* navigation link colors */
 /* revisit to change colors */
-$navA: black;
-$navB: red;
+$navA-Main: black;
+$navA-Visited: black;
 
 nav {
     lost-column: 1/2;
@@ -17,12 +18,14 @@ nav {
 }
 
 nav a {
+    border: 2px solid $navBorderColor;
+    padding: 1rem;
     text-decoration: none;
-    color: $navA;
+    color: $navA-Main;
 }
 
 nav a:visited {
-    color: $navB;
+    color: $navA-Visited;
 }
 
 nav ul {
@@ -32,9 +35,15 @@ nav ul {
 }
 
 nav li {
+    font-family: $navFont;
     display: inline-block;
-    border: 2px solid $navBorderColor;
-    padding: 1rem;
     line-height: 50px;
     font-size: 1.4em;
+}
+
+@media (max-width: 1200px) {
+    nav {
+        lost-column: 1;
+        height: 70%;
+    }
 }

@@ -1,9 +1,14 @@
 $headerHeight: 7rem;
 $headerTop: 10px;
-$headerLogo: 5em;
+$headerLogo: 4em;
+$headerFont: 'Rubik', sans-serif;
+
+/*media queries */
+$headerLogo-md: 3em;
 
 header {
-    lost-column: 1;
+    lost-row: 1;
+    border-bottom: 2px solid black;
     lost-utility: clearfix;
     height: $headerHeight;
     position: relative;
@@ -19,4 +24,27 @@ header {
 
 .hd-logo_h1 {
     font-size: $headerLogo;
+    font-family: $headerFont;
+}
+
+@media (max-width: 1200px) {
+    header {
+        height: 11rem;
+    }
+
+    .hd-logo_text {
+        lost-column: 1;
+        position: static;
+    }
+}
+
+@media (max-width: 1348px) {
+    .hd-logo_text {
+        top: calc($headerHeight / 4);
+    }
+
+    .hd-logo_h1 {
+        font-size: $headerLogo-md;
+        font-family: $headerFont;
+    }
 }
