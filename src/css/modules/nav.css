@@ -13,7 +13,7 @@ $navFont-mob: 2.4em;
 $navA-Main: black;
 $navA-Visited: black;
 $navA-hover-color: white;
-$navA-hover-background: #c6c6c6;
+$navA-hover-background: black;
 
 nav {
     lost-column: 1/2;
@@ -28,8 +28,20 @@ nav a {
     color: $navA-Main;
 }
 
+nav a:active {
+    background: $navA-hover-background;
+}
+
+nav a:active li {
+    color: #ffb400;
+}
+
 nav a:hover {
     background: $navA-hover-background;
+}
+
+nav a:hover li {
+    color: #ffb400;
 }
 
 nav a:visited {
@@ -58,5 +70,11 @@ nav li {
 
     nav li {
         font-size: 2.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    nav li {
+        font-size: 1.4em;
     }
 }

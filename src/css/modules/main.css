@@ -2,5 +2,8 @@ $contentTop: 8rem;
 
 main {
     position: relative;
-    top: 8rem;
+    top: 1rem;
+    background: black;
+    height: 100%;
+    display: block;
 }

@@ -2,6 +2,8 @@ $headerHeight: 7rem;
 $headerTop: 10px;
 $headerLogo: 3em;
 $headerFont: 'Rubik', sans-serif;
+$headerColor: #ffb400;
+$headerWrapperText: #000;
 
 /*media queries */
 $headerLogo-md: 3em;
@@ -17,12 +19,21 @@ header {
 
 .hd-logo_text {
     position: absolute;
+    background: $headerWrapperText;
     lost-column: 1/2;
     top: calc($headerHeight / 3.5);
     text-align: center;
 }
 
+.hd-logo_h1:before {
+    content: url(../images/pool.svg);
+    position: absolute;
+    left: -15px;
+    top: -36px;
+}
+
 .hd-logo_h1 {
+    color: $headerColor;
     text-transform: uppercase;
     font-size: $headerLogo;
     font-family: $headerFont;
