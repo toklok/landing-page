@@ -3,7 +3,10 @@ $mainFont: 'Rubik', sans-serif;
 $blackbeeColor: #ffb400;
 
 .front-seen {
+    position: relative;
+    overflow: hidden;
     height: 100%;
+    top: 140px;
     display: block;
 }
 
@@ -13,12 +16,23 @@ $blackbeeColor: #ffb400;
     background-repeat: round;
 }
 
+section .second-intro:before {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 157px;
+    opacity: .25;
+    background-image: url(../images/what.png);
+    z-index: 1;
+}
+
 .right-overlay {
     font-size: 3rem;
     width: 42%;
     float: right;
     position: relative;
     top: -37px;
+    z-index: 2;
     font-family: 'Rubik', sans-serif;
     margin-right: 14px;
     background: rgba(0, 0, 0, 0.5);
@@ -27,6 +41,13 @@ $blackbeeColor: #ffb400;
 .left-overlay_h1 {
     font-size: .85em;
     text-transform: uppercase;
+}
+
+.right-overlay li:before {
+    content: '✔';
+    text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+    color: darkgreen;
+    margin-right: 0.25em;
 }
 
 .right-overlay li {
@@ -63,11 +84,18 @@ $blackbeeColor: #ffb400;
     text-align: center;
 }
 
+.information a:before {
+    content: url(../images/phone.svg);
+    position: relative;
+    bottom: -30px;
+}
+
 .information a {
     color: white;
 }
 
 .second-intro {
+    lost-center: 760px;
     margin-top: 2rem;
 }
 

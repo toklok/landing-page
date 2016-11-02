@@ -10,17 +10,20 @@ $headerLogo-md: 3em;
 
 header {
     lost-row: 1;
-    border-bottom: 2px solid black;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    background-color: white;
+    border-bottom: 4px solid black;
     lost-utility: clearfix;
     height: $headerHeight;
-    position: relative;
-    top: $headerTop;
 }
 
 .hd-logo_text {
     position: absolute;
     background: $headerWrapperText;
     lost-column: 1/2;
+    left: 20px;
     top: calc($headerHeight / 3.5);
     text-align: center;
 }

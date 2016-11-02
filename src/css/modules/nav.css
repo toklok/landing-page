@@ -17,6 +17,8 @@ $navA-hover-background: black;
 
 nav {
     lost-column: 1/2;
+    position: relative;
+    right: 20px;
     height: $navHeight;
     padding: 1rem;
 }
