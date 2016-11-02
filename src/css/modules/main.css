@@ -1,10 +1,8 @@
 $contentTop: 8rem;
 $mainFont: 'Rubik', sans-serif;
+$blackbeeColor: #ffb400;
 
 .front-seen {
-    position: relative;
-    top: 1rem;
-    background: black;
     height: 100%;
     display: block;
 }
@@ -67,4 +65,24 @@ $mainFont: 'Rubik', sans-serif;
 
 .information a {
     color: white;
+}
+
+.second-intro {
+    margin-top: 2rem;
+}
+
+.second-h1_intro {
+    text-align: center;
+    font-size: 3em;
+    background: black;
+    color: $blackbeeColor;
+    font-family: $mainFont;
+}
+
+.second-left_side {
+
+}
+
+.second-right_side {
+
 }
