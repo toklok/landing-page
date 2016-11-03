@@ -4,7 +4,7 @@
 $navHeight: 150px;
 $navHeight: 100%;
 $navBorderColor: black;
-$navFont: 'Rubik', sans-serif;
+$navFont: 'Quicksand', sans-serif;
 $navFont-desk: 1.4em;
 $navFont-mob: 2.4em;
 
@@ -24,23 +24,23 @@ nav {
 }
 
 nav a {
-    border: 2px solid $navBorderColor;
-    padding: 1rem;
+    /*border: 10px solid $navBorderColor;*/
+    /*padding: .25rem;*/
     text-decoration: none;
     color: $navA-Main;
 }
 
-nav a:active {
-    background: $navA-hover-background;
-}
+/*nav a:active {*/
+    /*background: $navA-hover-background;*/
+/*}*/
 
-nav a:active li {
-    color: #ffb400;
-}
+/*nav a:active {*/
+    /*color: #ffb400;*/
+/*}*/
 
-nav a:hover {
-    background: $navA-hover-background;
-}
+/*nav a:hover {*/
+    /*background: $navA-hover-background;*/
+/*}*/
 
 nav a:hover li {
     color: #ffb400;
@@ -54,6 +54,7 @@ nav ul {
     display: flex;
     height: $navHeight;
     justify-content: space-between;
+    align-items: center
 }
 
 nav li {

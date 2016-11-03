@@ -2,10 +2,11 @@ const postcss = require('gulp-postcss'),
   gulp = require('gulp'),
   autoprefixer = require('autoprefixer'),
   lost = require('lost'),
+  typography = require('postcss-typography'),
   htmllint = require('gulp-htmllint'),
   colors = require('./src/css/vars'),
+  postcssNesting = require('postcss-nesting');
   gutil = require('gulp-util');
-
 
 const options = {
   cssSource: './src/css/style.css',
@@ -32,6 +33,20 @@ function htmllintReporter(filepath, issues) {
   }
 }
 
+//soon to be build script
+gulp.task('build', ['images', 'css', 'js']);
+
+gulp.task('js', function () {
+  gulp.src('./src/*.js')
+      .pipe(gulp.dest('./dest'))
+});
+
+//move images from src to dest
+gulp.task('images', function () {
+  gulp.src('./src/*.jpg')
+      .pipe(gulp.dest('./dest'))
+});
+
 gulp.task('css', function () {
   const proccessors = [
     lost(),
@@ -47,7 +62,8 @@ gulp.task('css', function () {
         'IE 10',
         'IE 11'
       ]
-    })
+    }),
+    postcssNesting()
   ];
   return gulp.src(options.cssSource)
     .pipe(postcss([require('postcss-easy-import')]))

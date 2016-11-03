@@ -2,115 +2,22 @@ $contentTop: 8rem;
 $mainFont: 'Rubik', sans-serif;
 $blackbeeColor: #ffb400;
 
-.front-seen {
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    top: 140px;
-    display: block;
-}
-
-.main-intro {
-    height: 548px;
-    background-image: url(../images/front-pool.jpg);
-    background-repeat: round;
-}
-
-section .second-intro:before {
-    height: 200px;
-    width: 100%;
-    position: absolute;
-    bottom: 157px;
-    opacity: .25;
-    background-image: url(../images/what.png);
-    z-index: 1;
-}
-
-.right-overlay {
-    font-size: 3rem;
-    width: 42%;
-    float: right;
-    position: relative;
-    top: -37px;
-    z-index: 2;
-    font-family: 'Rubik', sans-serif;
-    margin-right: 14px;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.left-overlay_h1 {
-    font-size: .85em;
-    text-transform: uppercase;
-}
-
-.right-overlay li:before {
-    content: '✔';
-    text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
-    color: darkgreen;
-    margin-right: 0.25em;
-}
-
-.right-overlay li {
-    color: white;
-}
-
-.left-overlay {
-    background: rgba(0, 0, 0, 0.5);
-    width: 55%;
-    font-size: 4rem;
-    font-family: $mainFont;
-    color: white;
-    top: calc(548px / 3);
-    position: relative;
-    left: 20px;
-    padding: 2rem;
-    text-align: center;
-}
-
-.right-overlay_h1 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 3rem;
-    color: white;
-    margin: 1rem;
-}
-
-.right-overlay ul {
-    margin: 1.5rem;
-}
-
-.information {
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.information a:before {
-    content: url(../images/phone.svg);
-    position: relative;
-    bottom: -30px;
-}
-
-.information a {
-    color: white;
-}
-
-.second-intro {
-    lost-center: 760px;
-    margin-top: 2rem;
-}
-
-.second-h1_intro {
-    text-align: center;
-    font-size: 3em;
-    background: black;
-    color: $blackbeeColor;
-    font-family: $mainFont;
-}
-
-.second-left_side {
-
-}
-
-.second-right_side {
-
+main {
+    margin-top: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    & h1 {
+          padding: .5em;
+          text-align: left;
+          font-size: 2em;
+          margin: 0;
+          text-transform: uppercase;
+          font-family: Rubik;
+          color: black;
+    }
+    & p {
+          font-size: calc(1vw + 1vh + 2vmin);
+          font-family: Quicksand;
+          padding: .5em;
+    }
 }

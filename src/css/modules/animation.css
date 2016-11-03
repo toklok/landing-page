@@ -1,38 +1,7 @@
-*, *:before, *:after {
-    box-sizing: border-box;
-}
-
-html, body {
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    background-color: white;
-    line-height: 1.2;
-}
-
-.arrow-button {
-    position: fixed;
-    background: #0148BC none repeat scroll 0 0;
-    visibility: hidden;
-    width: 35px;
-    height: 35px;
-    top: 50%;
-    right: 35px;
-    transform: rotate(45deg);
-    opacity: 0;
-}
-
 .arrow {
     position: absolute;
-    top: 75%;
-    left: 50%;
+    top: 50%;
+    left: calc(50% - 20px);
     transform: translate(-50%, -50%);
     width: 40px;
     height: 40px;
