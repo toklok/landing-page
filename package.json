@@ -8,31 +8,27 @@
   "license": "MIT",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-sourcemaps": "^2.6.1",
+    "gulp-sourcemaps": "^2.6.4",
     "postcss-cli": "^4.1.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.35",
-    "@babel/core": "^7.0.0-beta.35",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.35",
-    "@babel/preset-env": "^7.0.0-beta.35",
-    "@babel/register": "^7.0.0-beta.35",
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "@babel/register": "^7.0.0-beta.49",
     "autoprefixer": "^6.7.7",
-    "css-declaration-sorter": "^3.0.0",
+    "css-declaration-sorter": "^3.0.1",
     "gulp-htmllint": "0.0.11",
-    "gulp-postcss": "^7.0.0",
+    "gulp-postcss": "^7.0.1",
     "lost": "^7.1.1",
-    "mdcss": "^1.5.2",
-    "mdcss-theme-github": "^2.4.2",
-    "postcss": "^6.0.14",
-    "postcss-easy-import": "^1.0.1",
+    "postcss": "^6.0.22",
+    "postcss-easy-import": "^3.0.0",
     "postcss-nesting": "^4.2.1",
     "postcss-pxtorem": "^4.0.1",
     "postcss-reporter": "^5.0.0",
     "postcss-simple-vars": "^3.1.0",
     "postcss-typography": "^1.0.0",
-    "stylelint": "^8.4.0",
-    "stylelint-config-standard": "^18.0.0",
-    "typography": "^0.16.6"
+    "typography": "^0.16.17"
   }
 }
