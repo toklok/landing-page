@@ -3,4 +3,6 @@
 @import 'modules/header.css';
 @import 'modules/body.css';
 @import 'modules/main.css';
+@import 'modules/footer.css';
+@import 'modules/modal-specific.css';
 /*@typography;*/
