@@ -6,11 +6,8 @@ const postcss = require('gulp-postcss'),
   htmllint = require('gulp-htmllint'),
   colors = require('./src/css/vars'),
   postcssNesting = require('postcss-nesting'),
-  mdcss = require('mdcss'),
   pxtorem = require('postcss-pxtorem'),
   reporter = require('postcss-reporter'),
-  stylelint = require('stylelint'),
-  styleConfig = require('stylelint-config-standard'),
   gutil = require('gulp-util');
 
 const options = {
@@ -69,11 +66,7 @@ gulp.task('css', () => {
       ]
     }),
     postcssNesting(),
-    mdcss({
-      theme: require('mdcss-theme-github')()
-    }),
     pxtorem(),
-    // stylelint(styleConfig),
     reporter({ clearReportedMessages: true })
 
   ];
