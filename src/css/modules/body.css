@@ -3,8 +3,8 @@
 }
 
 html, body {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 html {
@@ -19,14 +19,14 @@ body {
 
 .arrow-button {
     position: fixed;
-    background: #0148BC none repeat scroll 0 0;
-    visibility: hidden;
-    width: 35px;
-    height: 35px;
     top: 50%;
     right: 35px;
     transform: rotate(45deg);
+    visibility: hidden;
     opacity: 0;
+    background: #0148BC none repeat scroll 0 0;
+    width: 35px;
+    height: 35px;
 }
 
 .arrow {
@@ -34,10 +34,10 @@ body {
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA3UlEQVRYhe2UMQ6CMBRAX+KghNA7eSnQDRe9ih5BXDQRDqFHUE/ggIO/C6FIocWlL/kL/fBeGAqBQODLDIgn9MXiBGAJvIAa2AMLj+IIOIjrKW7u8kDPURZ9yIuG64aU1I0pHEe0yWvgAZC1HLiMiICTwZHqpY1h4QokI+SJfKPt23lzOXccYSV3HZEApa38V0TZM0KNkfeJUL7lQyMUUBneyWzlthFe5BrTPVGJ2KtcszMIzsDFcLZ1JdeY/kTnDeea9J/yPhHe5V0Rk8k1a+Ats5parpnLBAKBwXwAalq6jm1ZI64AAAAASUVORK5CYII=);
     background-size: cover;
+    width: 40px;
+    height: 40px;
 }
 
 .bounce {

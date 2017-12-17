@@ -9,15 +9,15 @@ $headerWrapperText: #000;
 $headerLogo-md: 3em;
 
 header {
-    position: fixed;
     display: flex !important;
-    justify-content: space-around;
+    position: fixed;
     align-items: center;
+    justify-content: space-around;
+    z-index: 3;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    background-color: rgba(255,255,255, 0.9);
     width: 100%;
     height: 12vmin;
-    z-index: 3;
-    background-color: rgba(255,255,255, 0.9);
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
 }
 
 .hd-logo_text {
@@ -27,32 +27,32 @@ header {
 
 .hd-logo_h1 {
     color: $headerColor;
-    text-transform: uppercase;
-    font-size: $headerLogo;
     font-family: $headerFont;
+    font-size: $headerLogo;
+    text-transform: uppercase;
 }
 
 .main-description {
-    width: 100vw;
-    height: 100vh;
     background: url(./../hero-image.jpg) center no-repeat;
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
     & div {
+      display: flex;
+      position: absolute;
+      top: calc(50% + 53px); left: 50%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translate(-50%, -50%);
+      border-radius: 2px;
+      background: rgba(255, 255, 255, 0.9);
       width: 100vw;
       height: 300px;
-      background: rgba(255, 255, 255, 0.9);
-      top: calc(50% + 53px); left: 50%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      border-radius: 2px;
         & h1 {
-              text-align: center;
-              font-size: calc(2vw + 2vh + 2vmin);
               font-family: Quicksand;
+              font-size: calc(2vw + 2vh + 2vmin);
+              text-align: center;
         }
     }
 }

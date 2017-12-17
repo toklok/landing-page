@@ -1,16 +1,15 @@
 {
   "name": "MindfulWebsite",
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "N/A"
+    "test": "N/A",
+    "organize-css": "postcss ./src/css/modules/*.css --replace --no-map"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Joseph Curtis",
+  "license": "MIT",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp-sourcemaps": "^2.6.1",
+    "postcss-cli": "^4.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.35",
@@ -19,14 +18,21 @@
     "@babel/preset-env": "^7.0.0-beta.35",
     "@babel/register": "^7.0.0-beta.35",
     "autoprefixer": "^6.7.7",
+    "css-declaration-sorter": "^3.0.0",
     "gulp-htmllint": "0.0.11",
     "gulp-postcss": "^7.0.0",
     "lost": "^7.1.1",
+    "mdcss": "^1.5.2",
+    "mdcss-theme-github": "^2.4.2",
     "postcss": "^6.0.14",
     "postcss-easy-import": "^1.0.1",
     "postcss-nesting": "^4.2.1",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-reporter": "^5.0.0",
     "postcss-simple-vars": "^3.1.0",
     "postcss-typography": "^1.0.0",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
     "typography": "^0.16.6"
   }
 }

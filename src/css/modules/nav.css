@@ -19,15 +19,15 @@ nav {
     lost-column: 1/2;
     position: relative;
     right: 20px;
-    height: $navHeight;
     padding: 1rem;
+    height: $navHeight;
 }
 
 nav a {
+    color: $navA-Main;
     /*border: 10px solid $navBorderColor;*/
     /*padding: .25rem;*/
     text-decoration: none;
-    color: $navA-Main;
 }
 
 /*nav a:active {*/
@@ -52,17 +52,17 @@ nav a:visited {
 
 nav ul {
     display: flex;
-    height: $navHeight;
+    align-items: center;
     justify-content: space-between;
-    align-items: center
+    height: $navHeight
 }
 
 nav li {
-    font-family: $navFont;
     display: inline-block;
-    text-transform: uppercase;
-    line-height: 50px;
+    font-family: $navFont;
     font-size: 1.4em;
+    line-height: 50px;
+    text-transform: uppercase;
 }
 
 @media (max-width: 1200px) {

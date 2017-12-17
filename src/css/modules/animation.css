@@ -3,10 +3,10 @@
     top: 50%;
     left: calc(50% - 20px);
     transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA3UlEQVRYhe2UMQ6CMBRAX+KghNA7eSnQDRe9ih5BXDQRDqFHUE/ggIO/C6FIocWlL/kL/fBeGAqBQODLDIgn9MXiBGAJvIAa2AMLj+IIOIjrKW7u8kDPURZ9yIuG64aU1I0pHEe0yWvgAZC1HLiMiICTwZHqpY1h4QokI+SJfKPt23lzOXccYSV3HZEApa38V0TZM0KNkfeJUL7lQyMUUBneyWzlthFe5BrTPVGJ2KtcszMIzsDFcLZ1JdeY/kTnDeea9J/yPhHe5V0Rk8k1a+Ats5parpnLBAKBwXwAalq6jm1ZI64AAAAASUVORK5CYII=);
     background-size: cover;
+    width: 40px;
+    height: 40px;
 }
 
 .bounce {

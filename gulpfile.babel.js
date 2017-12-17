@@ -5,7 +5,12 @@ const postcss = require('gulp-postcss'),
   typography = require('postcss-typography'),
   htmllint = require('gulp-htmllint'),
   colors = require('./src/css/vars'),
-  postcssNesting = require('postcss-nesting');
+  postcssNesting = require('postcss-nesting'),
+  mdcss = require('mdcss'),
+  pxtorem = require('postcss-pxtorem'),
+  reporter = require('postcss-reporter'),
+  stylelint = require('stylelint'),
+  styleConfig = require('stylelint-config-standard'),
   gutil = require('gulp-util');
 
 const options = {
@@ -36,18 +41,18 @@ function htmllintReporter(filepath, issues) {
 //soon to be build script
 gulp.task('build', ['images', 'css', 'js']);
 
-gulp.task('js', function () {
+gulp.task('js', () => {
   gulp.src('./src/*.js')
       .pipe(gulp.dest('./dest'))
 });
 
 //move images from src to dest
-gulp.task('images', function () {
+gulp.task('images', () => {
   gulp.src('./src/*.jpg')
       .pipe(gulp.dest('./dest'))
 });
 
-gulp.task('css', function () {
+gulp.task('css', () => {
   const proccessors = [
     lost(),
     autoprefixer({
@@ -63,7 +68,14 @@ gulp.task('css', function () {
         'IE 11'
       ]
     }),
-    postcssNesting()
+    postcssNesting(),
+    mdcss({
+      theme: require('mdcss-theme-github')()
+    }),
+    pxtorem(),
+    // stylelint(styleConfig),
+    reporter({ clearReportedMessages: true })
+
   ];
   return gulp.src(options.cssSource)
     .pipe(postcss([require('postcss-easy-import')]))
